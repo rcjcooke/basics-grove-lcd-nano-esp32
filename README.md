@@ -1,7 +1,9 @@
 # basics-grove-lcd-nano-esp32
 Grove LCD RGB Backlight V4.0 running from an Arduino Nano ESP32 via a Level Shifter.
 
-![Demo Video](./media/demo.mp4)
+![Up and Running](./media/workingstill.jpg)
+
+[Video here](./media/demo.mp4) 
 
 **NOTE**: Arduino Nano ESP32 (based on the Espressif microcontroller) is a 3.3V device, whereas V4 of the Grove LCD is a 5V device.
 
