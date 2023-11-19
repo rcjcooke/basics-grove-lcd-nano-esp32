@@ -40,14 +40,16 @@ void setup() {
 }
 
 void loop() {
-  // Set the cursor to column 0, line 1
-  lcd.setCursor(0, 1);
-  // Print the number of seconds since reset
-  lcd.print(millis()/1000);
-  // Rainbow backlight
+
   static unsigned char r = 255;
   static unsigned char g = 0;
   static unsigned char b = 0;
+
+  // Set the cursor to column 0, line 1
+  lcd.setCursor(0, 1);
+  // Print the current RGB values
+  lcd.printf("%03d %03d %03d", r, g, b);
+  // Rainbow backlight
   static int segment = 0;
   switch (segment) {
     case 0:
